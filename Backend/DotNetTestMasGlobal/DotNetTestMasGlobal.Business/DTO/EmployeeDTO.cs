@@ -12,8 +12,8 @@ namespace DotNetTestMasGlobal.Business.DTO
         public int RoleId { get; set; }
         public string RoleName { get; set; }
         public string RoleDescription { get; set; }
-        public float HourlySalary { get; set; }
-        public float MonthlySalary { get; set; }
-        public float AnualSalary { get; set; }
+        public double HourlySalary { get; set; }
+        public double MonthlySalary { get; set; }
+        public double AnualSalary { get; set; }
     }
 }

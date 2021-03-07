@@ -20,8 +20,8 @@ namespace DotNetTestMasGlobal.Data.Entities
         [JsonProperty("roleDescription")]
         public string RoleDescription { get; set; }
         [JsonProperty("hourlySalary")]
-        public float HourlySalary { get; set; }
+        public double HourlySalary { get; set; }
         [JsonProperty("monthlySalary")]
-        public float MonthlySalary { get; set; }
+        public double MonthlySalary { get; set; }
     }
 }
