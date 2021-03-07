@@ -37,6 +37,9 @@
             </tr>
         </tbody>
     </table>
+    <div *ngIf="employeeList.length < 1 && canShowLoading">
+        <h2>Loading..</h2>
+    </div>
     <div *ngIf="employeeList.length < 1 && canShowNoResult">
         <h2>No Results Found</h2>
     </div>

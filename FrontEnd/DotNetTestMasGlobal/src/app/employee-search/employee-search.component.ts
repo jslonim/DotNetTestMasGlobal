@@ -13,6 +13,8 @@ export class EmployeeSearchComponent implements OnInit {
   public employeeList : Employee[] = [];
   public employeeId  : string = '';
   public canShowNoResult : boolean = false;
+  public canShowLoading : boolean = false;
+  
   constructor(private employeeSearchService : EmployeeSearchService) { }
 
   ngOnInit(): void {
@@ -20,24 +22,29 @@ export class EmployeeSearchComponent implements OnInit {
   }
 
   seachEmployee(){
+    this.employeeList = [];
+    this.canShowLoading = true;
+    this.canShowNoResult = false;
     if(this.employeeId == ''){
       this.employeeSearchService.GetAllEmployees().subscribe(
         result =>{
           this.employeeList = result;
+          this.canShowNoResult = true;
+          this.canShowLoading = false;
         }
       );
     }
     else if (!isNaN(Number(this.employeeId))){
       this.employeeSearchService.GetEmployeeById(Number(this.employeeId)).subscribe(
         result =>{
-          this.employeeList = [];
           if(result != null){
             this.employeeList.push(result);
           }
+          this.canShowNoResult = true;
+          this.canShowLoading = false;
         }
       );
     } 
-    this.canShowNoResult = true;
   }
 
 }
