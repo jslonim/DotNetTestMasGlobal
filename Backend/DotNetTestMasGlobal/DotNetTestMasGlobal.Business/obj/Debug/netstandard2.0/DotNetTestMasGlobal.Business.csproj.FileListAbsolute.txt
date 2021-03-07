@@ -1,0 +1,12 @@
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\bin\Debug\netstandard2.0\DotNetTestMasGlobal.Business.deps.json
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\bin\Debug\netstandard2.0\DotNetTestMasGlobal.Business.dll
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\bin\Debug\netstandard2.0\DotNetTestMasGlobal.Business.pdb
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\bin\Debug\netstandard2.0\DotNetTestMasGlobal.Data.dll
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\bin\Debug\netstandard2.0\DotNetTestMasGlobal.Data.pdb
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Business.csprojAssemblyReference.cache
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Business.AssemblyInfoInputs.cache
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Business.AssemblyInfo.cs
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Business.csproj.CoreCompileInputs.cache
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Business.csproj.CopyComplete
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Business.dll
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Business\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Business.pdb

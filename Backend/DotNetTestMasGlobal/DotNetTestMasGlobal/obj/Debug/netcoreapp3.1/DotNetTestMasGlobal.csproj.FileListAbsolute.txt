@@ -24,3 +24,7 @@ C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal\bin\Debug
 C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal\obj\Debug\netcoreapp3.1\DotNetTestMasGlobal.MvcApplicationPartsAssemblyInfo.cs
 C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal\obj\Debug\netcoreapp3.1\DotNetTestMasGlobal.csproj.CopyComplete
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal\bin\Debug\netcoreapp3.1\DotNetTestMasGlobal.Business.dll
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal\bin\Debug\netcoreapp3.1\DotNetTestMasGlobal.Data.dll
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal\bin\Debug\netcoreapp3.1\DotNetTestMasGlobal.Business.pdb
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal\bin\Debug\netcoreapp3.1\DotNetTestMasGlobal.Data.pdb

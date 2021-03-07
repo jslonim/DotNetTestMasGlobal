@@ -1,0 +1,8 @@
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\bin\Debug\netstandard2.0\DotNetTestMasGlobal.Data.deps.json
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\bin\Debug\netstandard2.0\DotNetTestMasGlobal.Data.dll
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\bin\Debug\netstandard2.0\DotNetTestMasGlobal.Data.pdb
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Data.AssemblyInfoInputs.cache
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Data.AssemblyInfo.cs
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Data.csproj.CoreCompileInputs.cache
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Data.dll
+C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Data.pdb

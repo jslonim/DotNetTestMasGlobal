@@ -24,6 +24,8 @@
     ".NETCoreApp,Version=v3.1": {
       "DotNetTestMasGlobal/1.0.0": {
         "dependencies": {
+          "DotNetTestMasGlobal.Business": "1.0.0",
+          "DotNetTestMasGlobal.Data": "1.0.0",
           "Swashbuckle.AspNetCore": "6.1.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -372,6 +374,25 @@
         },
         "compile": {
           "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        }
+      },
+      "DotNetTestMasGlobal.Business/1.0.0": {
+        "dependencies": {
+          "DotNetTestMasGlobal.Data": "1.0.0"
+        },
+        "runtime": {
+          "DotNetTestMasGlobal.Business.dll": {}
+        },
+        "compile": {
+          "DotNetTestMasGlobal.Business.dll": {}
+        }
+      },
+      "DotNetTestMasGlobal.Data/1.0.0": {
+        "runtime": {
+          "DotNetTestMasGlobal.Data.dll": {}
+        },
+        "compile": {
+          "DotNetTestMasGlobal.Data.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -2115,6 +2136,16 @@
       "sha512": "sha512-JdItBvuC3oKkf9PW1o/Ad1fP4Z31GpLYfBTKBtPstGtg7Sc85Vqtf4mhd3B/z0GJuGLQYInpWL1It2/0yzLVVA==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.1.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.1.0.nupkg.sha512"
+    },
+    "DotNetTestMasGlobal.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DotNetTestMasGlobal.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

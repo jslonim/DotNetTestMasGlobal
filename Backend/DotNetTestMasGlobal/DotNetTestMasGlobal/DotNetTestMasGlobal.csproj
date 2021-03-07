@@ -8,5 +8,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetTestMasGlobal.Business\DotNetTestMasGlobal.Business.csproj" />
+    <ProjectReference Include="..\DotNetTestMasGlobal.Data\DotNetTestMasGlobal.Data.csproj" />
+  </ItemGroup>
+
 
 </Project>
