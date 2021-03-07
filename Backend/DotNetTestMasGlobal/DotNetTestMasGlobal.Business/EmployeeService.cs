@@ -38,6 +38,7 @@ namespace DotNetTestMasGlobal.Business
 
         public async Task<EmployeeDTO> GetEmployeeById(int id)
         {
+            //Este es el metodo mas general y simple que pude hacer en este tiempo, aun podriamos pasarlo a una Base de datos y buscar por Id mas rapido
             List<Employee> employeeList = await _repository.GetEmployees();
             foreach (var employee in employeeList)
             {
