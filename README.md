@@ -1,5 +1,5 @@
 # DotNetTestMasGlobal
-This project is made in .Net Core 3.1 Web API for the backend and Agular 11 for the frontend
+This project was made in .Net Core 3.1 Web API for the backend and Agular 11 for the frontend
 
 ## Backend API Endpoints
 ### **(GET) Employee/GetEmployees**
