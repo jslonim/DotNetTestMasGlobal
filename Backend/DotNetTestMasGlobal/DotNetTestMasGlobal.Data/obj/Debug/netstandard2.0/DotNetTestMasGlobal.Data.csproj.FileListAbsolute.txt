@@ -6,4 +6,3 @@ C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\obj\
 C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Data.csproj.CoreCompileInputs.cache
 C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Data.dll
 C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Data.pdb
-C:\DotNetTestMasGlobal\Backend\DotNetTestMasGlobal\DotNetTestMasGlobal.Data\obj\Debug\netstandard2.0\DotNetTestMasGlobal.Data.csprojAssemblyReference.cache

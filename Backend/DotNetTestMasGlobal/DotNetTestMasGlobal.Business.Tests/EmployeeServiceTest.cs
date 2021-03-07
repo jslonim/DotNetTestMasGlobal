@@ -44,7 +44,7 @@ namespace DotNetTestMasGlobal.Business.Tests
         }
 
         [Test]
-        public void Test_GetEmployeeById_WithEmployeeFound_ShouldReturnNull()
+        public void Test_GetEmployeeById_WithEmployeeNotFound_ShouldReturnNull()
         {
             employeeRepository.Setup(x => x.GetEmployees()).Returns(Task.FromResult<List<Employee>>(employees));
 
