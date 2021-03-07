@@ -11,7 +11,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.OpenApi.Models;
-
+using DotNetTestMasGlobal.Business;
+using DotNetTestMasGlobal.Business.Interfaces;
+using DotNetTestMasGlobal.Data.Interfaces;
+using DotNetTestMasGlobal.Data;
 
 namespace DotNetTestMasGlobal
 {
@@ -24,14 +27,16 @@ namespace DotNetTestMasGlobal
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
             AddSwagger(services);
-        }
+            services.AddTransient<IEmployeeService, EmployeeService>();
+            services.AddTransient<IEmployeeRepository>(option =>
+               new EmployeeRepository(Configuration.GetValue<string>("EmployeeEndpointURL"))
+            );
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -42,7 +47,7 @@ namespace DotNetTestMasGlobal
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Foo API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "DotNetTestMasGlobal API V1");
             });
 
             app.UseHttpsRedirection();

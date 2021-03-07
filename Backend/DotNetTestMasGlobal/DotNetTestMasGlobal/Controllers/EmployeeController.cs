@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DotNetTestMasGlobal.Business.DTO;
+using DotNetTestMasGlobal.Business.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,6 +13,38 @@ namespace DotNetTestMasGlobal.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
+        //Al hacer este ejercicio, claramente es notable que esta hecho de una forma simple pero que muchas cosas pueden ser agregadas
+        //Cosas que podrian ser agregadas en el futuro:
+        //Agregar cache para los resultados ya que son los mismos casi siempre
+        //Base de datos
+        //Autenticacion
+        //Proyecto de Shared para helpers, excepciones custom y demas
+        //Y mas cosas que no vienen al punto del test
+        IEmployeeService _employeeService;
+        public EmployeeController(IEmployeeService employeeService)
+        {
+            _employeeService = employeeService;
+        }
+        [Route("GetEmployees")]
+        [HttpGet]
+        public IActionResult  GetEmployees() 
+        {
+            return Ok(_employeeService.GetEmployees().Result);
+        }
 
+        [Route("GetEmployeeById/{id}")]
+        [HttpGet]
+        public IActionResult GetEmployeeById(int id)
+        {
+            EmployeeDTO result = _employeeService.GetEmployeeById(id).Result;
+            if (result == null)
+            {
+                return NoContent();
+            }
+            else {
+                return Ok(result);
+            }
+
+        }
     }
 }

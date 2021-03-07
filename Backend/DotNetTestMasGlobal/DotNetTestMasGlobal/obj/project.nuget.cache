@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Ah0HmqKEBiUH+YJPbQCGv5FgaJVEKxRPPgpkcqdz2rdBtYUO6Wr8wFPJrwS7rXzLz0GWFg9yKOHDNxFU5hOAdA==",
+  "dgSpecHash": "W62rjhyyzj1yGe6Mwj5AVd0h4WaGG99Ks5NhRqOMNz7qSVsZWU+G/mOLkU0mu4hzfld4MAD9hPCuaBv6fgyVJQ==",
   "success": true,
   "projectFilePath": "C:\\DotNetTestMasGlobal\\Backend\\DotNetTestMasGlobal\\DotNetTestMasGlobal\\DotNetTestMasGlobal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julian\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Julian\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Julian\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Julian\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.0\\swashbuckle.aspnetcore.6.1.0.nupkg.sha512",
     "C:\\Users\\Julian\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.0\\swashbuckle.aspnetcore.swagger.6.1.0.nupkg.sha512",
     "C:\\Users\\Julian\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.0\\swashbuckle.aspnetcore.swaggergen.6.1.0.nupkg.sha512",

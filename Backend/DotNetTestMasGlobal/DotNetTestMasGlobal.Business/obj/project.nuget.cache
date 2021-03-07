@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lywYNUTJUBwpiZPOg37HLjZL6JrF6ScYnY10THN6gbUbZQgHNPYzLKsFcqQ5E3BVsnOszlfoDMIUYMtMaKMHpQ==",
+  "dgSpecHash": "f4z7fs9bt2vI1ymmUB4GT2L4SuiMmaAA2BAFDY1sUZIyRjt9jxPe5NVVgvCYZPWQgZuK2oBajoLZVx5+YF/orw==",
   "success": true,
   "projectFilePath": "C:\\DotNetTestMasGlobal\\Backend\\DotNetTestMasGlobal\\DotNetTestMasGlobal.Business\\DotNetTestMasGlobal.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julian\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Julian\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Julian\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Julian\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }
