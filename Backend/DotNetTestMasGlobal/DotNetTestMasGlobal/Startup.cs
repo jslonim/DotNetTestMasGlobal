@@ -26,11 +26,13 @@ namespace DotNetTestMasGlobal
         }
 
         public IConfiguration Configuration { get; }
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
             AddSwagger(services);
+            services.AddCors();
             services.AddTransient<IEmployeeService, EmployeeService>();
             services.AddTransient<IEmployeeRepository>(option =>
                new EmployeeRepository(Configuration.GetValue<string>("EmployeeEndpointURL"))
@@ -49,6 +51,12 @@ namespace DotNetTestMasGlobal
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "DotNetTestMasGlobal API V1");
             });
+
+            app.UseCors(x => x
+                .WithOrigins("http://localhost:4200/")
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true)
+                .AllowCredentials()); 
 
             app.UseHttpsRedirection();
 

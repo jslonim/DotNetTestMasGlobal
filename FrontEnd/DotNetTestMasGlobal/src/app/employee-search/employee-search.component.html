@@ -2,12 +2,14 @@
     <div class="search-bar">
         <h1>Seach Employee</h1>
 
-        <input type="text" class="form-control seach-text" placeholder="Employee Number" aria-label="Username"
+        <input type="text" [(ngModel)]="employeeId" class="form-control seach-text" placeholder="Employee Id" 
             aria-describedby="basic-addon1">
+
+        <button type="button" class="btn btn-primary btn-lg" (click)="seachEmployee()">Get Employees</button>
     </div>
 </div>
 <div class="table-container">
-    <table class="table" *ngIf="employeeList.Length > 1">
+    <table class="table" *ngIf="employeeList.length > 0">
         <thead>
             <tr>
                 <th scope="col">Id </th>
@@ -23,19 +25,19 @@
         </thead>
         <tbody>
             <tr *ngFor="let employee of employeeList;">
-                <th scope="row">{{employee.Id}}</th>
-                <td>{{employee.Name}}</td>
-                <td>{{employee.ContractTypeName}}</td>
-                <td>{{employee.RoleId}}</td>
-                <td>{{employee.RoleName}}</td>
-                <td>{{employee.RoleDescription}}</td>
-                <td>{{employee.HourlySalary}}</td>
-                <td>{{Memployee.onthlySalary}}</td>
-                <td>{{employee.AnualSalary}}</td>
+                <th scope="row">{{employee.id}}</th>
+                <td>{{employee.name}}</td>
+                <td>{{employee.contractTypeName}}</td>
+                <td>{{employee.roleId}}</td>
+                <td>{{employee.roleName}}</td>
+                <td>{{employee.roleDescription != null ? employee.roleDescription : 'None'}} </td>
+                <td>{{employee.hourlySalary | number : '1.2-2'}}</td>
+                <td>{{employee.monthlySalary | number : '1.2-2'}}</td>
+                <td>{{employee.anualSalary | number : '1.2-2'}}</td>
             </tr>
         </tbody>
     </table>
-    <div *ngIf="employeeList.Length < 1">
+    <div *ngIf="employeeList.length < 1 && canShowNoResult">
         <h2>No Results Found</h2>
     </div>
 </div>

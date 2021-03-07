@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { EmployeeSearchService } from './employee-search/employee-search.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +17,11 @@ import { HeaderComponent } from './shared/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [EmployeeSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

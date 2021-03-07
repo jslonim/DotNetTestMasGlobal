@@ -1,5 +1,6 @@
 ﻿using DotNetTestMasGlobal.Business.DTO;
 using DotNetTestMasGlobal.Business.Interfaces;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
