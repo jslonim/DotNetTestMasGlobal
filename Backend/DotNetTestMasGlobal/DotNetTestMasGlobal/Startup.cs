@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.OpenApi.Models;
+
 
 namespace DotNetTestMasGlobal
 {
@@ -26,6 +28,7 @@ namespace DotNetTestMasGlobal
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            AddSwagger(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +39,12 @@ namespace DotNetTestMasGlobal
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Foo API V1");
+            });
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -45,6 +54,27 @@ namespace DotNetTestMasGlobal
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+        }
+
+        private void AddSwagger(IServiceCollection services)
+        {
+            services.AddSwaggerGen(options =>
+            {
+                var groupName = "v1";
+
+                options.SwaggerDoc(groupName, new OpenApiInfo
+                {
+                    Title = $"DotNetTestMasGlobal {groupName}",
+                    Version = groupName,
+                    Description = "DotNetTestMasGlobal API",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Julian Slonim Limited",
+                        Email = string.Empty,
+                        Url = new Uri("https://github.com/jslonim/DotNetTestMasGlobal"),
+                    }
+                });
             });
         }
     }
