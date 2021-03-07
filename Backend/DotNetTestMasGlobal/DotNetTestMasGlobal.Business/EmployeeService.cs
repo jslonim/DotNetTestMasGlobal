@@ -23,7 +23,7 @@ namespace DotNetTestMasGlobal.Business
             List<Employee> employeeList = await _repository.GetEmployees();
             foreach (var employee in employeeList)
             {
-                //In this case we ignore posible workers without contract type, we could add an else with exception for that case.
+                //Ignoramos posibles trabajadores que vengan sin type espefico, pero podriamos loguear una irregularidad y tenerla en cuenta.
                 if (employee.ContractTypeName == EmployeeEnums.ContractTypeName.HourlySalaryEmployee.ToString())
                 {
                     employeeDTOList.Add(EmployeeFactory.CreateEmployee(EmployeeEnums.ContractTypeName.HourlySalaryEmployee, employee));
