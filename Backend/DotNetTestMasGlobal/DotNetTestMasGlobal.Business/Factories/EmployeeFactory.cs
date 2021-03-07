@@ -1,5 +1,4 @@
 ﻿using DotNetTestMasGlobal.Business.DTO;
-using DotNetTestMasGlobal.Business.Entities;
 using DotNetTestMasGlobal.Business.Enums;
 using DotNetTestMasGlobal.Data.Entities;
 using System;
@@ -10,16 +9,28 @@ namespace DotNetTestMasGlobal.Business.Factories
 {
     public static class EmployeeFactory
     {
-        public static EmployeeDTO CreateEmployee(EmployeeEnums.ContractTypeName contractTypeName, Employee employee) {
-            //Del enunciado entendi que se requeria un tipo de DTO distinto para cada tipo de worker, aca estan usados con el patron factory
-            //aunque sean iguales y no necesiten distincion del DTO original, usandolos para mapear de manera correspondiente la data y el AnualSalary
-            if (contractTypeName == EmployeeEnums.ContractTypeName.HourlySalaryEmployee)
+        public static EmployeeDTO Create(Employee employee) {
+
+            EmployeeDTO employeeDTO = new EmployeeDTO();
+            employeeDTO.Id = employee.Id;
+            employeeDTO.Name = employee.Name;
+            employeeDTO.ContractTypeName = employee.ContractTypeName;
+            employeeDTO.RoleId = employee.RoleId;
+            employeeDTO.RoleName = employee.RoleName;
+            employeeDTO.RoleDescription = employee.RoleDescription;
+            employeeDTO.HourlySalary = employee.HourlySalary;
+            employeeDTO.MonthlySalary = employee.MonthlySalary;
+         
+            if (employee.ContractTypeName == EmployeeEnums.ContractTypeName.HourlySalaryEmployee.ToString())
             {
-                return new HourlySalaryEmployee(employee);
+                employeeDTO.AnualSalary = 120 * employeeDTO.HourlySalary * 12;
             }
-            else {
-                return new MonthlySalaryEmployee(employee);
+            else if (employee.ContractTypeName == EmployeeEnums.ContractTypeName.MonthlySalaryEmployee.ToString())
+            {
+                employeeDTO.AnualSalary = employeeDTO.MonthlySalary * 12;
             }
+
+            return employeeDTO;
         }
     }
 }

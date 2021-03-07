@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetTestMasGlobal.Business.DTO
 {
-    public abstract class EmployeeDTO
+    public class EmployeeDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }

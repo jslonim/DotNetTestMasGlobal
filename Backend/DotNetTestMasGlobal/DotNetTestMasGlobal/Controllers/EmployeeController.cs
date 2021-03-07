@@ -19,7 +19,6 @@ namespace DotNetTestMasGlobal.Controllers
         //Base de datos
         //Autenticacion
         //Proyecto de Shared para helpers, excepciones custom y demas
-        //Y mas cosas que no vienen al punto del test
         IEmployeeService _employeeService;
         public EmployeeController(IEmployeeService employeeService)
         {
