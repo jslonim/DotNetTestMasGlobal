@@ -20,9 +20,9 @@ Includes Swagger for the documentation
 
 
 ## FrontEnd Structure
-The frontend has been split in components apart from the main app component and includes a share folder for shared components and classes.
+The frontend has been split in components from the main app component and includes a share folder for shared components and classes.
 
-The search component includes itself a service class to call the API on the backend and an Employee class to use an specific class insted of a generic Any type.
+The search component includes a service class to call the API on the backend and an Employee class to use an specific class insted of a generic Any type.
 
 The UI is built using Bootstrap for the table and the seatch button while using Flexbox for the position of the UI Components.
 
